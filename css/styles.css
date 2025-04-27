@@ -2,209 +2,301 @@
 
 /* Cor de fundo e texto */
 body {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 0 20px;  /* Pequeno padding nas laterais */
-    justify-content: flex-start;
-  }
-  
-  /* Container centralizado */
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px; /* Tamanho máximo de largura igual ao dos cards */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 25%; /* Aumentei a largura da sidebar para melhor balanceamento */
-    padding: 20px;
-    background-color: none;
-    color: #ccd6f6;
-    border-right: 2px solid #112240;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 1rem; /* de 3rem para 1rem */
-  }
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 20px;  /* Pequeno padding nas laterais */
+  justify-content: flex-start;
+}
 
-  .social-icons {
-    margin-bottom: 3rem;  /* cria um pequeno espaço abaixo para não encostar na borda */
-  }
-  
-  .sidebar h1, .sidebar h2, .sidebar p {
-    text-align: center; /* Centraliza nome, cargo e frase */
-  }
-  
-  .sidebar h1 {
-    font-size: 3rem; /* Maior para destaque */
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #ccd6f6;
-  }
-  
-  .sidebar p {
-    font-size: 1.1rem;
-    color: #8892b0;
-  }
-  
-  /* Navegação da sidebar */
-  .sidebar nav a {
-    color: #ccd6f6;
-    font-size: 0.9rem; /* Ajustado */
-    font-weight: 600;
-    display: block;
-    margin: 8px 0;
-    padding: 8px;
-    transition: color 0.3s ease;
-  }
-  
-  .sidebar nav a:hover {
-    color: #1b98e0;
-  }
-  
-  /* Ícones sociais */
-  .social-icons a {
-    color: #ccd6f6;
-    font-size: 1.2rem; /* Menor para elegância */
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #1b98e0;
-  }
-  
-  /* Conteúdo principal */
-  .content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Main content */
-  main.content {
-    width: 40%; /* Diminuí para não ficar tão largo */
-    padding: 20px;
-    padding-top: 3rem;    /* mesmo padding-top da sidebar */
-    padding-bottom: 1rem; /* mesmo padding-bottom da sidebar */
-    background-color: none;
-    color: #ccd6f6;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
-  }
+/* Container centralizado */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
 
-  main.content p,
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: none;
+  color: #ccd6f6;
+  border-right: 2px solid #112240;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+}
+
+.social-icons {
+  margin-bottom: 3rem;
+}
+
+.sidebar h1, .sidebar h2, .sidebar p {
+  text-align: center;
+}
+
+.sidebar h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ccd6f6;
+}
+
+.sidebar p {
+  font-size: 1.1rem;
+  color: #8892b0;
+}
+
+/* Navegação da sidebar */
+.sidebar nav a {
+  color: #ccd6f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav a:hover {
+  color: #1b98e0;
+}
+
+/* Ícones sociais */
+.social-icons a {
+  color: #ccd6f6;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1b98e0;
+}
+
+/* Conteúdo principal */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main.content {
+  width: 40%;
+  padding: 20px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: none;
+  color: #ccd6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main.content p,
 #sobre p,
 .job-desc,
 .card p {
   text-align: justify;
 }
-  
-  
-  /* Seção Sobre */
-  #sobre p {
-    line-height: 1.7;
-  }
-  
-  #sobre h1 {
-    font-size: 1.8rem; /* Ajustado */
-    font-weight: 700;
-    color: #ffffff;
-  }
-  
-  /* Destaque de keywords */
-  .highlight {
-    transition: color 0.3s;
-    cursor: pointer;
-  }
-  
-  .highlight:hover {
-    color: #1b98e0;
-  }
-  
-  
-  /* Cards */
-  .card {
-    background-color: none;
-    padding: 1rem;          /* Menos padding para deixar mais compacto */
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    max-width: 600px;       /* Limita a largura do card */
-    margin: 1rem;           /* Adiciona margem entre os cards */
-    padding: 20px;
-  }
-  
-  .card h2 {
-    color: #ffffff;
-    font-size: 1.25rem;     /* Reduzindo o título */
-    font-weight: 600;
-    margin-bottom: 1rem;    /* Menos margem entre título e conteúdo */
-  }
-  
-  .card h3 {
-    color: #ffffff;
-    font-size: 1rem;        /* Ajustado para ficar mais compacto */
-    font-weight: 600;
-    margin-bottom: 0.5rem;  /* Menos margem */
-  }
-  
-  .card p {
-    color: #ccd6f6;
-    font-size: 0.9rem;      /* Texto mais compacto */
-    margin-bottom: 1rem;
-  }
-  
-  .card a {
-    color: #1b98e0;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
-  }
-  
-  .card a:hover {
-    color: #ffffff;
-  }
-  
-  .card i {
-    margin-right: 0.5rem;
-    font-size: 1rem;        /* Ícone um pouco menor */
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #112240;
-    color: #ccd6f6;
-    padding: 2rem 0;
-    text-align: center;
-    font-size: 0.875rem; /* Ajustado */
-  }
-  
-  #tsparticles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Fica atrás de tudo */
-    background-color: #0a192f; /* Mantém o seu fundo bonito */
+
+/* Seção Sobre */
+#sobre p {
+  line-height: 1.7;
 }
 
-  
+#sobre h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Destaque de keywords */
+.highlight {
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.highlight:hover {
+  color: #1b98e0;
+}
+
+/* Cards */
+.card {
+  background-color: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 600px;
+  margin: 1rem;
+  padding: 20px;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #ccd6f6;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: #1b98e0;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #ffffff;
+}
+
+.card i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #112240;
+  color: #ccd6f6;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #0a192f;
+}
+
+/* Responsividade para telas pequenas */
+
+/* Para telas com largura máxima de 768px (exemplo para tablets e celulares) */
+@media (max-width: 768px) {
+  body {
+      font-size: 1rem; /* Tamanho de fonte ajustado para rem */
+  }
+
+  .container {
+      width: 100%; /* O container vai ocupar 100% da largura da tela */
+      padding: 0; /* Remover padding para evitar cortes */
+      display: block; /* Para evitar que o conteúdo se sobreponha */
+  }
+
+  .card {
+      width: 100%; /* Os cards vão ocupar 100% da largura da tela */
+      margin-bottom: 3rem; /* Margem inferior para espaçamento entre os cards */
+      padding: 0; /* Removendo o padding */
+  }
+
+  .card h2, .card h3, .card p {
+      font-size: 1rem; /* Ajustando a fonte para não ficar muito pequena */
+  }
+
+  main.content {
+      width: 100%; /* O conteúdo principal vai ocupar 100% da largura da tela */
+      padding: 1rem; /* Padding ajustado para garantir que o conteúdo não encoste nas bordas */
+  }
+}
+
+/* Para telas ainda menores (exemplo para celulares em modo retrato ou telas com 400px de largura) */
+@media (max-width: 480px) {
+  .container {
+      width: 100%; /* Garantindo que o container ocupe 100% da largura */
+      padding: 0; /* Remover padding */
+  }
+
+  .card {
+      width: 100%; /* Cards ocupando toda a largura da tela */
+      margin-bottom: 2rem; /* Margem inferior para espaçamento entre os cards */
+      padding: 0; /* Remover padding */
+  }
+
+  .card h2 {
+      font-size: 1rem; /* Tamanho de fonte ajustado para o título */
+  }
+
+  .card h3 {
+      font-size: 0.9rem; /* Ajuste do subtítulo para tela menor */
+  }
+
+  .card p {
+      font-size: 0.9rem; /* Ajustando o texto para que fique legível no celular */
+  }
+
+  main.content {
+      width: 100%; /* O conteúdo vai ocupar 100% da tela */
+      padding: 1rem; /* Padding ajustado para não encostar nas bordas */
+  }
+}
+
+/* Para telas ainda menores, como 400px ou menos */
+@media (max-width: 400px) {
+  body {
+      font-size: 0.9rem; /* Tamanho de fonte menor para telas muito pequenas */
+  }
+
+  .container {
+      width: 100%; /* O container vai ocupar 100% da largura da tela */
+      padding: 0.5rem; /* Pequeno padding para não colar nas bordas */
+      display: block; /* Para evitar sobreposição */
+  }
+
+  .card {
+      width: 100%; /* Cards ocupando toda a largura da tela */
+      margin-bottom: 1.5rem; /* Menos margem entre os cards */
+      padding: 0.5rem; /* Menos padding nos cards */
+  }
+
+  .card h2 {
+      font-size: 1rem; /* Ajuste no tamanho da fonte do título */
+  }
+
+  .card h3 {
+      font-size: 0.8rem; /* Ajuste ainda maior para o subtítulo */
+  }
+
+  .card p {
+      font-size: 0.85rem; /* Reduzindo ainda mais o tamanho da fonte */
+  }
+
+  main.content {
+      width: 100%; /* O conteúdo vai ocupar 100% da tela */
+      padding: 0.5rem; /* Ajustando o padding para telas muito pequenas */
+  }
+}

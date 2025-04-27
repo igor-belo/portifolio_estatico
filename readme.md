@@ -31,8 +31,7 @@ Este é o repositório do meu site de portfólio pessoal, desenvolvido para apre
 
 ## 🖼️ Preview do Site
 
-```html
-<img src="images/printsite.png" alt="Print do Portfólio" style="width: 100%; border-radius: 10px;">
+![Captura de tela do Gerador de Inserts](images/printsite.png)
 
 
 ##📥 Como rodar o projeto localmente

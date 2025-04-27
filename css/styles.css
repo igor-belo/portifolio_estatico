@@ -110,7 +110,6 @@ main.content {
 
 main.content p,
 #sobre p,
-.job-desc,
 .card p {
   text-align: justify;
 }
@@ -266,7 +265,7 @@ footer {
 }
 
 /* Para telas ainda menores, como 400px ou menos */
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   body {
       font-size: 0.9rem; /* Tamanho de fonte menor para telas muito pequenas */
   }

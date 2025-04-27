@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Igor Belo</title>
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Seu CSS customizado -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-[#0a192f] text-[#ccd6f6] font-sans flex flex-col min-h-screen">
+
+  <!-- fundo de partículas “fixas” -->
+  <div id="tsparticles"></div>
+  <!-- luz que segue o cursor -->
+  <div class="cursor-light"></div>
+
+  <div class="container flex flex-col md:flex-row w-full">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar w-full md:w-1/2 p-12 flex flex-col justify-between border-r-0 md:border-r-2 border-[#112240] bg-none md:sticky md:top-0 md:h-screen">
+      <div class="text-center space-y-4">
+        <h3 class="text-6xl font-bold text-white leading-tight cursor-highlight">Igor Belo</h3>
+        <h2 class="text-2xl text-[#64ffda] cursor-highlight">Back-End Developer</h2>
+      </div>
+
+      <div class="social-icons flex justify-center space-x-4 mt-8">
+        <a href="https://github.com/igor-belo" target="_blank">
+          <i class="fab fa-github text-2xl hover:text-[#1b98e0] transition cursor-highlight"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/igor-belo/" target="_blank">
+          <i class="fab fa-linkedin text-2xl hover:text-[#1b98e0] transition cursor-highlight"></i>
+        </a>
+        <a href="https://www.instagram.com/igor_belo.py/#" target="_blank">
+          <i class="fab fa-instagram text-2xl hover:text-[#1b98e0] transition cursor-highlight"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC0OBGtQ4oakilgdJqa_d88A">
+          <i class="fab fa-youtube text-2xl hover:text-[#1b98e0] transition cursor-highlight"></i>
+        </a>
+        <a href="mailto:igorbello170@gmail.com">
+          <i class="fas fa-envelope text-2xl hover:text-[#1b98e0] transition cursor-highlight"></i>
+        </a>
+        
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="content w-full md:w-1/2 overflow-y-auto p-16">
+      <!-- SOBRE -->
+      <section id="sobre" class="about mb-16">
+        <p class="text-base leading-relaxed">
+          Olá! Eu sou o Igor Belo, Desenvolvedor back-end e estudante de Análise e Desenvolvimento de Sistemas com forte paixão por tecnologia e inovação. Ao longo da minha trajetória, venho aprofundando meus conhecimentos em <span class="highlight cursor-highlight">Python</span>, <span class="highlight cursor-highlight">C#</span> e <span class="highlight cursor-highlight">Delphi</span>, aplicando-os em projetos que vão desde aplicações web até soluções de automação. No back-end, domino frameworks como <span class="highlight cursor-highlight">Django</span>, <span class="highlight cursor-highlight">Flask</span> e <span class="highlight cursor-highlight">.NET</span>, garantindo arquiteturas escaláveis e código limpo.
+          <br/><br/>
+          Além disso, tenho experiência em <span class="highlight cursor-highlight">JavaScript</span>, tanto no front-end quanto em integrações REST, e atualmente tenho explorado o desenvolvimento de jogos com <span class="highlight cursor-highlight">Unity</span>, onde aprendo conceitos de design de jogos, física e C# aplicado a gráficos.
+          <br/><br/>
+          No campo de bancos de dados, possuo amplo domínio em <span class="highlight cursor-highlight">PostgreSQL</span>, <span class="highlight cursor-highlight">Firebird</span> e <span class="highlight cursor-highlight">Microsoft SQL Server</span>, criando estruturas otimizadas, elaborando queries complexas, views e procedures, além de realizar migrações e resolver incidentes de corrupção de dados.
+        </p>
+      </section>
+
+      <!-- EXPERIÊNCIA -->
+      <section id="experiencia" class="card mb-16">
+        <h2 class="text-xl font-semibold text-white mb-4 cursor-highlight">Experiência Profissional</h2>
+        <div class="job mb-8">
+          <h3 class="text-xl font-semibold text-white mb-2 cursor-highlight">
+            Analista de sistemas – 
+            <a href="https://www.alterdata.com.br/" target="_blank" class="hover:underline text-[#64ffda] cursor-highlight">
+              Alterdata Software
+            </a>
+          </h3>
+          <p class="job-time text-sm text-[#8892b0]">2021 — Presente</p>
+          <p class="job-desc mt-4 text-base leading-relaxed">
+            Analista de sistemas no setor de retaguarda, atuando com banco de dados PostgreSQL com criação de views e scripts, análise de base de dados e ajuste de bases corrompidas.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="card mb-16">
+        <h2 class="text-xl font-semibold text-white mb-4 cursor-highlight">Projetos</h2>
+        <div class="space-y-8">
+          <div class="card transition cursor-highlight">
+            <h3 class="text-lg font-semibold text-white mb-2 cursor-highlight">Backup & Restore</h3>
+            <p class="text-base leading-relaxed mb-4">
+              Ferramenta desenvolvida em Python com interface criada em Tkinter para realizar e restaurar backups do PostgreSQL...
+            </p>
+            <a href="https://github.com/igor-belo/backup-and-restore" target="_blank"
+               class="inline-flex items-center text-[#64ffda] hover:text-white transition cursor-highlight">
+              <i class="fab fa-github text-xl mr-2"></i>Ver no GitHub
+            </a>
+          </div>
+          <div class="card transition cursor-highlight">
+            <h3 class="text-lg font-semibold text-white mb-2 cursor-highlight">Gerador de Inserts</h3>
+            <p class="text-base leading-relaxed mb-4">
+              Ferramenta em Python que gera INSERTs de SQL a partir de Excel/CSV...
+            </p>
+            <a href="https://github.com/igor-belo/Gerador-de-Inserts" target="_blank"
+               class="inline-flex items-center text-[#64ffda] hover:text-white transition cursor-highlight">
+              <i class="fab fa-github text-xl mr-2"></i>Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#0a192f] text-center text-[#ccd6f6] py-8 mt-auto">
+    <p class="text-base">Desenvolvido por Igor Belo</p>
+  </footer>
+
+  <!-- JS customizado -->
+  <script src="js/script.js"></script>
+</body>
+</html>

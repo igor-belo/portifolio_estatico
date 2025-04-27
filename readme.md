@@ -34,7 +34,7 @@ Este é o repositório do meu site de portfólio pessoal, desenvolvido para apre
 ![Captura de tela do Gerador de Inserts](images/printsite.png)
 
 
-##📥 Como rodar o projeto localmente
+## 📥 Como rodar o projeto localmente
 
 Clone este repositório:
 
@@ -50,7 +50,7 @@ Obs: Como ele é todo feito em HTML/CSS/JS puro, não precisa instalar nada para
 
 
 
-##📬 Contato
+## 📬 Contato
 Entre em contato comigo pelos links e vamos trocar uma ideia
 
 &nbsp;&nbsp;&nbsp;

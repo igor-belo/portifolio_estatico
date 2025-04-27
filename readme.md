@@ -59,7 +59,6 @@ Entre em contato comigo pelos links e vamos trocar uma ideia
   <a href="https://www.linkedin.com/in/igor-belo/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"  target="_blank"></a> 
   <a href="https://www.instagram.com/igor_belo.py/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
   <a href="mailto:igorbello170@gmail.com"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://leetcode.com/u/VCnus6rVTl/"> <img src="https://img.shields.io/badge/LeetCode-FF5722?style=for-the-badge&logo=leetcode&logoColor=white" target="_blank"></a>
 </div>
 
 
